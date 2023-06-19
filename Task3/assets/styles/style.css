@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container {
+    max-width: 1500px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.main {
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+}
+
+.main__container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /*не получается поставить flex-basis вместо width*/
+    justify-content: space-around;
+}
+
+.block-info_big {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.block-info__title {
+    flex-basis: 10%;
+    margin-left: 3%;
+    margin-top: 10%;
+
+}
+
+.block-info__title_second {
+    margin-top: 2%;
+}
+
+.block-info__text {
+    flex-basis: 10%;
+}
+
+.block-info__text,
+.nav {
+    width: 487px;
+    height: 96px;
+    margin-left: 5%;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+}
+
+.block-info__button-buy {
+    flex-basis: 30%;
+    margin-left: 3%;
+    margin-top: 5%;
+    align-items: flex-start;
+}
+
+.block-info__footer,
+.footer {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: space-between;
+    align-items: center;
+    /*позиционирование не работает, не могу найти почему*/
+}
+
+.footer_second {
+    max-width: 50%;
+    margin-left: 9%;
+    align-items: flex-end;
+}
+
+.nav {
+    text-decoration: none;
+}
+
+.block-img {
+    flex: 1;
+    width: 1096.34px;
+    height: 724.31px;
+}
+
+.block-info__wrapper-list {
+    flex-basis: 70%;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /*в grid.scss:14 указаны margin -15px к каждой из этих сторон. Убрать получилось только установив важность*/
+}
+
+.subscribe {
+    background-color: rgba(236, 97, 91, 1) !important;
+}
